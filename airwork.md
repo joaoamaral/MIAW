@@ -1,0 +1,23 @@
+<html>
+<body>
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'ja'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DBC000000izsb',
+				'Air_ASA_Embedded_Service',
+				'https://airwork-rct-support--hddemo.sandbox.my.site.com/ESWAirASAEmbeddedServi1739754968152',
+				{
+					scrt2URL: 'https://airwork-rct-support--hddemo.sandbox.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://airwork-rct-support--hddemo.sandbox.my.site.com/ESWAirASAEmbeddedServi1739754968152/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+</body>
+</html>
