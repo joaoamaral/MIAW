@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <title>Agentforce Chat Example HTML Page</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #6200ea;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+    button {
+      background-color: #03dac6;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #018786;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #6200ea;
+      color: white;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentforce Chat Example HTML Page</h1>
+  </header>
+  <main>
+    <p>Initial Message</p>
+    <button onclick="initEmbeddedMessaging()">Let's Chat</button>
+  </main>
+  <footer>
+    <p>&copy; 2025 circlace</p>
+  </footer>
+
+  <script>
+    function showMessage() {
+      alert("Hello! This is a simple interaction.");
+    }
+  </script>
+
+<script type='text/javascript'> 
+  function initEmbeddedMessaging() {
+    try { 
+      embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+		
+      embeddedservice_bootstrap.init(
+  			'00DKc000001UElS',
+  			'GitHubPagesWebEmbeddedServiceDeployment',
+  			'https://ci1737333738963.my.site.com/ESWGitHubPagesWebEmbedded1739766140357',
+  			{
+  				scrt2URL: 'https://ci1737333738963.my.salesforce-scrt.com'
+  			}
+  		);
+  	} catch (err) {
+  		console.error('Error loading Embedded Messaging: ', err);
+  	}
+};
+</script> 
+<script type='text/javascript' src='https://ci1737333738963.my.site.com/ESWGitHubPagesWebEmbedded1739766140357/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+</body>
+</html>
